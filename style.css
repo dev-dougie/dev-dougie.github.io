@@ -204,6 +204,7 @@ nav ul li a {
     text-align: center;
     margin: 25px;
     cursor: pointer;
+    padding: 15px;
 }
 .projects div a {
     z-index: 4px;
@@ -227,7 +228,6 @@ nav ul li a {
 .projects div:hover {
     transform: scale(1.1);
     background: blur(20px);
-    border: 1px solid black;
 }
 
 .goals p {
