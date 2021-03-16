@@ -1,0 +1,359 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bounce {
+  20% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  20% {
+    -webkit-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
+  40% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  80% {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.max-width, body {
+  max-width: 90%;
+}
+
+body {
+  font-family: "Zilla Slab", serif;
+  margin-left: 2%;
+}
+
+header {
+  background: white;
+  width: 100%;
+  -webkit-animation: up 0.5s linear;
+          animation: up 0.5s linear;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header ul li {
+  list-style: none;
+  padding: 15px;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+header ul li a:hover {
+  background: black;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+main .home {
+  -webkit-animation: up 1s linear;
+          animation: up 1s linear;
+  height: 60vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .home .animation {
+  margin-left: 10%;
+  width: 600px;
+  height: 315px;
+  background-image: url("../assets/dev.svg");
+  background-size: cover;
+  border: 1px solid white;
+}
+
+main .home .introduce {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .home .introduce h2 {
+  font-size: 45px;
+}
+
+main .home .introduce span {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+main .home .introduce a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 95%;
+  color: white;
+  background: black;
+  top: 30px;
+  padding: 8px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+main .home .introduce .social-media {
+  margin-top: 25px;
+}
+
+main .home .introduce .social-media ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .home .introduce .social-media ul li {
+  list-style: none;
+  margin-left: 10px;
+}
+
+main .home .introduce .social-media ul li a {
+  font-weight: 500;
+  padding: 8px;
+}
+
+main .home .introduce .social-media ul li a i {
+  margin-right: 5px;
+}
+
+main .home .introduce .social-media .github {
+  background-color: #9370db;
+}
+
+main .home .introduce .social-media .linkedin {
+  background-color: #0e76a8;
+}
+
+main .home .introduce .social-media .whatsapp {
+  background: #128c7e;
+}
+
+main .projects {
+  -webkit-animation: up 2s linear;
+          animation: up 2s linear;
+  margin-bottom: 75px;
+}
+
+main .projects .tittle {
+  margin-bottom: 25px;
+}
+
+main .projects .tittle h1 {
+  text-align: center;
+}
+
+main .projects .frame {
+  margin-left: 10%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[3];
+      grid-template-columns: repeat(3, 2fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}
+
+main .projects .frame .card {
+  -webkit-box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
+          box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
+  border-radius: 4px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .projects .frame .card .project-access {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .projects .frame .card .project-access a {
+  font-family: sans-serif;
+  font-weight: 150;
+  text-decoration: none;
+  color: white;
+  border-radius: 4px;
+  padding: 10px;
+  margin: auto 2px;
+}
+
+main .projects .frame .card .project-access .deploy {
+  background-color: limegreen;
+}
+
+main .projects .frame .card .project-access .repo {
+  background-color: #9370db;
+}
+
+main .projects .frame .card:hover {
+  -webkit-animation: bounce 0.5s linear;
+          animation: bounce 0.5s linear;
+}
+
+main .skills {
+  height: 20vh;
+  -webkit-animation: up 1.5s linear;
+          animation: up 1.5s linear;
+}
+
+main .skills .tittle {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+main .skills .tittle h1 {
+  text-align: center;
+}
+
+main .skills .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 10%;
+}
+
+main .skills .skill-list li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
+.btn-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 50vh;
+  display: none;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+/*# sourceMappingURL=style.css.map */
