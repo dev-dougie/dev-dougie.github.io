@@ -30,7 +30,7 @@ const projects = [
         name: "Cãorreria",
         about:
             "A plataforma Cãorreria surgiu com intuito de ajudar donos de cães, que por ventura não têm tempo a encontrarem 'dogwalkers'",
-        link: "https://chatzinho-with-node.herokuapp.com/"
+        link: "https://gentle-hamlet-31765.herokuapp.com/"
     },
     {
         name: "Happy",
