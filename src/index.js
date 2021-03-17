@@ -29,7 +29,7 @@ const projects = [
     {
         name: "Cãorreria",
         about:
-            "A plataforma Cãorreria surgiu com intuito de ajudar donos de cães, que por ventura não têm tempo a encontrarem 'dogwalkers'",
+            "A plataforma Cãorreria surgiu com intuito de ajudar donos de cães, que por ventura não têm tempo a encontrarem 'dogwalkers'.",
         link: "https://gentle-hamlet-31765.herokuapp.com/"
     },
     {
@@ -42,7 +42,7 @@ const projects = [
     {
         name: "Proffy",
         about:
-            "A plataforma Proffy é uma aplicação que conecta professoras a alunos. Nela é possível realizar a busca por tutores de acordo com a matéria pré-definida.",
+            "A plataforma Proffy é uma aplicação que conecta professores a alunos. Nela é possível realizar a busca por tutores de acordo com a área de estudo pré-definida.",
         repository: "https://github.com/dev-dougie/proffy",
         link: "#"
     },
