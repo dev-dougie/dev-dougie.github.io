@@ -156,11 +156,11 @@ const skillFrame = document.querySelector(".skill-list");
 projects.map((project) => {
     frame.innerHTML += `
     <div class="card">
-      <strong>${project.name}</strong>
+      <h3>${project.name}</h3>
         <p>${project.about}</p>
       <div class="project-access">
-        <a href= ${project.link} class="deploy" target = '_blank' ><i class="fas fa-play"></i></a>
-        <a href="${project.repository}" class="repo" target = '_blank'> <i class="fab fa-github-alt"></i></a>
+        <a href= ${project.link} class="deploy" target = '_blank' ><i class="fas fa-play"></i>Projeto</a>
+        <a href="${project.repository}" class="repo" target = '_blank'> <i class="fab fa-github-alt"></i>Ver código</a>
       </div>
     </div>`;
 });
@@ -168,7 +168,7 @@ projects.map((project) => {
 skills.map((skill) => {
     skillFrame.innerHTML += `
     <li>
-      <a href= '${skill.link}' target = "_blank"><img src= '${skill.img}' alt= '${skill.name}' width="40" height="40"/></a>
+      <a href= '${skill.link}' target = "_blank"><img src= '${skill.img}' alt= '${skill.name}' width="60" height="60"/></a>
     </li>
     `;
 });

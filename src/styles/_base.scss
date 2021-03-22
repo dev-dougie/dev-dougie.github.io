@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $default-font;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 700px;
+    max-width: 1440px;
+    margin: auto 60px;
+}

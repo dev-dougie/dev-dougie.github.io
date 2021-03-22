@@ -1,12 +1,21 @@
+
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Zilla Slab", serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  max-width: 700px;
+  max-width: 1440px;
+  margin: auto 60px;
 }
 
 @-webkit-keyframes up {
@@ -69,54 +78,6 @@ html {
   }
 }
 
-.max-width, body {
-  max-width: 90%;
-}
-
-body {
-  font-family: "Zilla Slab", serif;
-  margin-left: 2%;
-}
-
-header {
-  background: white;
-  width: 100%;
-  -webkit-animation: up 0.5s linear;
-          animation: up 0.5s linear;
-}
-
-header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-header ul li {
-  list-style: none;
-  padding: 15px;
-  font-weight: 900;
-  font-size: 18px;
-}
-
-header ul li a {
-  text-decoration: none;
-  color: black;
-  padding: 5px;
-  border-radius: 4px;
-}
-
-header ul li a:hover {
-  background: black;
-  color: white;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
 main .home {
   -webkit-animation: up 1s linear;
           animation: up 1s linear;
@@ -133,7 +94,7 @@ main .home {
 }
 
 main .home .animation {
-  margin-left: 10%;
+  margin-left: 50px;
   width: 600px;
   height: 315px;
   background-image: url("../assets/dev.svg");
@@ -179,9 +140,9 @@ main .home .introduce a {
           justify-content: center;
   width: 95%;
   color: white;
-  background: black;
+  background: #4b4b4b;
   top: 30px;
-  padding: 8px;
+  padding: 12px;
   font-weight: 500;
   border-radius: 4px;
 }
@@ -210,7 +171,7 @@ main .home .introduce .social-media ul li {
 
 main .home .introduce .social-media ul li a {
   font-weight: 500;
-  padding: 8px;
+  padding: 12px;
 }
 
 main .home .introduce .social-media ul li a i {
@@ -229,22 +190,46 @@ main .home .introduce .social-media .whatsapp {
   background: #128c7e;
 }
 
+main .skills {
+  height: 20vh;
+  -webkit-animation: up 1.5s linear;
+          animation: up 1.5s linear;
+}
+
+main .skills .tittle {
+  margin: 25px 0;
+}
+
+main .skills .skill-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .skills .skill-list li {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+}
+
 main .projects {
   -webkit-animation: up 2s linear;
           animation: up 2s linear;
-  margin-bottom: 75px;
+  margin: 75px 0;
 }
 
 main .projects .tittle {
   margin-bottom: 25px;
 }
 
-main .projects .tittle h1 {
-  text-align: center;
-}
-
 main .projects .frame {
-  margin-left: 10%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (2fr)[3];
@@ -257,7 +242,7 @@ main .projects .frame .card {
   -webkit-box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
           box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
   border-radius: 4px;
-  padding: 20px;
+  padding: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,6 +258,10 @@ main .projects .frame .card {
           flex-direction: column;
 }
 
+main .projects .frame .card h3 {
+  margin: 0 5px;
+}
+
 main .projects .frame .card .project-access {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,13 +274,16 @@ main .projects .frame .card .project-access {
 }
 
 main .projects .frame .card .project-access a {
-  font-family: sans-serif;
   font-weight: 150;
   text-decoration: none;
   color: white;
   border-radius: 4px;
   padding: 10px;
-  margin: auto 2px;
+  margin: 10px auto;
+}
+
+main .projects .frame .card .project-access a i {
+  margin-right: 6px;
 }
 
 main .projects .frame .card .project-access .deploy {
@@ -307,49 +299,16 @@ main .projects .frame .card:hover {
           animation: bounce 0.5s linear;
 }
 
-main .skills {
-  height: 20vh;
-  -webkit-animation: up 1.5s linear;
-          animation: up 1.5s linear;
-}
-
-main .skills .tittle {
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
-main .skills .tittle h1 {
-  text-align: center;
-}
-
-main .skills .skill-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-left: 10%;
-}
-
-main .skills .skill-list li {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  list-style: none;
-}
-
 .btn-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  height: 40px;
-  width: 40px;
+  cursor: pointer;
+  outline: none;
+  height: 60px;
+  width: 60px;
   color: #fff;
-  background-color: #000000;
+  background-color: #4b4b4b;
   border: none;
   border-radius: 50vh;
   display: none;

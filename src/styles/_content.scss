@@ -1,0 +1,156 @@
+main {
+    .home {
+        animation: up 1s linear;
+        height: 60vh;
+        @include flexLayout(space-between);
+
+        .animation {
+            margin-left: 50px;
+            width: 600px;
+            height: 315px;
+            background-image: url("../assets/dev.svg");
+            background-size: cover;
+            border: 1px solid white;
+        }
+
+        .introduce {
+            @include flexLayout(space-between);
+            flex-direction: column;
+            h2 {
+                font-size: 45px;
+            }
+            span {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+            a {
+                text-decoration: none;
+                @include flexLayout(center);
+                width: 95%;
+                color: white;
+                background: rgb(75, 75, 75);
+                top: 30px;
+                padding: 12px;
+                font-weight: 500;
+                border-radius: $radius;
+            }
+
+            .social-media {
+                margin-top: 25px;
+                ul {
+                    width: 100%;
+                    @include flexLayout(space-between);
+                    li {
+                        list-style: none;
+                        margin-left: 10px;
+                        a {
+                            font-weight: 500;
+                            padding: 12px;
+                            i {
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+                }
+                .github {
+                    background-color: #9370db;
+                }
+                .linkedin {
+                    background-color: #0e76a8;
+                }
+                .whatsapp {
+                    background: #128c7e;
+                }
+            }
+        }
+    }
+
+    .skills {
+        height: 20vh;
+        animation: up 1.5s linear;
+        .tittle {
+           margin: 25px 0;
+        }
+
+        .skill-list {
+            @include flexLayout(space-around);
+            li {
+                flex-direction: column;
+                list-style: none;
+            }
+        }
+    }
+
+    .projects {
+        animation: up 2s linear;
+        margin: 75px 0;
+        .tittle {
+            margin-bottom: 25px;
+        }
+
+        .frame {
+            display: grid;
+            grid-template-columns: repeat(3, 2fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 30px;
+
+            .card {
+                box-shadow: 0px 3px 10px rgba(88, 88, 88, 0.1), 0px 16px 31px rgba(88, 88, 88, 0.1);
+                border-radius: $radius;
+                padding: 35px;
+                @include flexLayout(space-between);
+                flex-direction: column;
+
+                h3{
+                    margin: 0 5px;
+                }
+
+                .project-access {
+                    @include flexLayout(space-around);
+                    a {
+                  
+                        font-weight: 150;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: $radius;
+                        padding: 10px;
+                        margin:  10px auto;
+                    
+                        i{
+                            margin-right: 6px;
+                        }
+                    }
+                     
+                    .deploy {
+                        background-color: limegreen;
+                    }
+
+                    .repo {
+                        background-color: #9370db;
+                    }
+                }
+                &:hover {
+                    animation: bounce 0.5s linear;
+                }
+            }
+        }
+    }
+
+   
+}
+
+.btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+    outline: none;
+    height: 60px;
+    width: 60px;
+    color: #fff;
+    background-color: rgb(75, 75, 75);
+    border: none;
+    border-radius: 50vh;
+    display: none;
+    transition: 0.9s;
+}
