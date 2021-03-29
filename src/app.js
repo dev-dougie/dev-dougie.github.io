@@ -1,5 +1,11 @@
 const projects = [
     {
+        name: "Bella Olonje",
+        about: "Landing page para apresentação de aplicativo de delivery.",
+        repository: 'https://github.com/dev-dougie/bella-olonje',
+        link: 'https://bella-olonje.herokuapp.com/'
+    },
+    {
         name: "To-do App",
         about:
             "Aplicativo para gestão de tarefas, onde é possível adicionar uma nova tarefa, editá-la e atualizar a mesma, persistindo os dados.",
