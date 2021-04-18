@@ -1,5 +1,11 @@
 const projects = [
     {
+        name: "API Cyrela",
+        about: "Webservice desenvolvido para construtora Cryela utilizando Spring Boot",
+        repository: "https://github.com/dev-dougie/api-cyrela",
+        link: "#"
+    },
+    {
         name: "Bella Olonje",
         about: "Landing page para apresentação de aplicativo de delivery.",
         repository: 'https://github.com/dev-dougie/bella-olonje',
@@ -148,6 +154,12 @@ const skills = [
         img:
             "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
         link: "https://www.java.com"
+    },
+    {
+        name: ".Net Framework (C# and ASP.Net)",
+        img: 'https://cdn.iconscout.com/icon/free/png-512/microsoft-dot-net-1-1175179.png',
+        link: "https://dotnet.microsoft.com/",
+
     },
     {
         name: "Git",
