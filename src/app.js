@@ -1,5 +1,11 @@
 const projects = [
     {
+        name: "Feedget",
+        about: "Widget de Feedback desenvolvido na edição da NLW return da Rocketseat",
+        link: "https://nlw-return-impulse-r5si43kgs-dev-dougie.vercel.app/",
+        repository: "https://github.com/dev-dougie/nlw-return-impulse-web"
+    },
+    {
         name: "API Cyrela",
         about: "Webservice desenvolvido para construtora Cryela utilizando Spring Boot",
         repository: "https://github.com/dev-dougie/api-cyrela",
