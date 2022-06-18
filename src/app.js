@@ -1,5 +1,11 @@
 const projects = [
     {
+        name: "E-commerce Homepage",
+        about: "Landing Page de um ecommerce fictício desenvolvido como teste técnico da agência Maeztra",
+        link: "https://dev-dougie.github.io/ecommerce-home",
+        repository: 'https://github.com/dev-dougie/ecommerce-home'
+    },
+    {
         name: "Feedget",
         about: "Widget de Feedback desenvolvido na edição da NLW return da Rocketseat",
         link: "https://nlw-return-impulse-r5si43kgs-dev-dougie.vercel.app/",
